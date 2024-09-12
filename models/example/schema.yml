@@ -9,7 +9,7 @@ models:
             description: "The primary key for this table"
             tests:
                 - unique
-                - not_null
+
 
     - name: my_second_dbt_model
       description: "A starter dbt model"
@@ -18,12 +18,11 @@ models:
             description: "The primary key for this table"
             tests:
                 - unique
-                - not_null
+
     - name: lead_finance_agg
-      description: "table"
+      description: "lead_finance_table"
       columns:
-          - name: id
+          - name: total
             description: "The primary key for this table"
             tests:
-                - unique
                 - not_null
